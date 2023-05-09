@@ -13,7 +13,7 @@ services:
     ports:
     - '8125:8125'
   influxdb:
-    image: influxdb:1.8-alpine
+    image: influxdb
     container_name: influxdb
     restart: always
     environment:
