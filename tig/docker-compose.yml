@@ -5,7 +5,7 @@ services:
     container_name: telegraf
     restart: always
     volumes:
-    - ./tig/:/etc/telegraf/:ro
+    - /mnt/tig/tig:/etc/telegraf/:ro
     depends_on:
       - influxdb
     links:
